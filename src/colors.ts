@@ -10,9 +10,9 @@ function getEffects(effectList: string[]): string {
 }
 
 interface OptionsProps {
-    font?: boolean;
+    font?: string;
     background?: string;
-    effects?: string[];
+    effects?: [string];
 }
 
 export function color(text: string, options: OptionsProps): string {
