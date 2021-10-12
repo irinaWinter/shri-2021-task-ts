@@ -1,15 +1,7 @@
-import { color } from './colors';
-import { markdown } from './md';
+import { color, ColorProps } from './colors';
+import { markdown, MarkdownProps } from './md';
 
-interface OptionsProps {
-    font?: string;
-    background?: string;
-    effects?: string[];
-    bold?: boolean;
-    italic?: boolean;
-    mono?: boolean;
-    link?: string;
-}
+type OptionsProps = ColorProps | MarkdownProps;
 
 export function style(text: string, options: OptionsProps) {
     if (text.length === 0) {

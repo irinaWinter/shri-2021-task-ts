@@ -9,13 +9,13 @@ function getEffects(effectList: string[]): string {
     return effectList.map(effect => effects[effect]).join('');
 }
 
-interface OptionsProps {
+export interface ColorProps {
     font?: string;
     background?: string;
     effects?: string[];
 }
 
-export function color(text: string, options?: OptionsProps) {
+export function color(text: string, options?: ColorProps) {
     const preparedText: string = text.replace(/ё/g, 'е');
     let result: string = '';
     if (options) {
