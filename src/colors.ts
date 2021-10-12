@@ -1,5 +1,5 @@
 import { backgroundColors, effects, fontColors, Reset } from './model';
-function addColor(text: string, color: string, isBackground = false) {
+function addColor(text: string, color: string, isBackground: boolean = false) {
     if (isBackground) {
         return text + backgroundColors[color];
     }
@@ -16,8 +16,8 @@ interface OptionsProps {
 }
 
 export function color(text: string, options: OptionsProps) : string {
-    const preparedText = text.replace(/ё/g, 'е');
-    let result = '';
+    const preparedText: string = text.replace(/ё/g, 'е');
+    let result: string = '';
     if (options) {
         if (options.font) {
             result = addColor(result, options.font);
