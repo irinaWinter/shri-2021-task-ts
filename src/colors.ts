@@ -16,8 +16,8 @@ interface OptionsProps {
 }
 
 export function color(text: string, options: OptionsProps) : string {
-    const preparedText: string = text.replace(/ё/g, 'е');
-    let result: string = '';
+    const preparedText = text.replace(/ё/g, 'е');
+    let result = '';
     if (options) {
         if (options.font) {
             result = addColor(result, options.font);
