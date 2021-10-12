@@ -1,10 +1,10 @@
 import { color } from './colors';
 
 export interface MarkdownProps {
-    bold?: boolean;
-    italic?: boolean;
-    mono?: boolean;
-    link?: string;
+    bold?: boolean
+    italic?: boolean
+    mono?: boolean
+    link?: string
 }
 
 export function markdown(text: string, options: MarkdownProps) {

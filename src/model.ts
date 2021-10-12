@@ -1,17 +1,12 @@
-export const Reset: string = '\x1b[0m';
-
-interface SettingsProps {
-    [key: string]: string;
-}
-
-export const effects: SettingsProps = {
+export const Reset = '\x1b[0m';
+export const effects = {
     bright: '\x1b[1m',
     dim: '\x1b[2m',
     italic: '\x1b[3m',
     underscore: '\x1b[4m',
     blink: '\x1b[5m',
 };
-export const fontColors: SettingsProps = {
+export const fontColors = {
     black: '\x1b[30m',
     red: '\x1b[31m',
     green: '\x1b[32m',
@@ -21,7 +16,7 @@ export const fontColors: SettingsProps = {
     cyan: '\x1b[36m',
     white: '\x1b[37m',
 };
-export const backgroundColors: SettingsProps = {
+export const backgroundColors = {
     black: '\x1b[40m',
     red: '\x1b[41m',
     green: '\x1b[42m',
@@ -31,7 +26,7 @@ export const backgroundColors: SettingsProps = {
     cyan: '\x1b[46m',
     white: '\x1b[47m',
 };
-export const contrast: SettingsProps = {
+export const contrast = {
     black: 'white',
     red: 'black',
     green: 'black',
