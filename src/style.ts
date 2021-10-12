@@ -4,7 +4,7 @@ import { markdown } from './md';
 interface OptionsProps {
     font?: string;
     background?: string;
-    effects?: [string];
+    effects?: string[];
     bold?: boolean;
     italic?: boolean;
     mono?: boolean;

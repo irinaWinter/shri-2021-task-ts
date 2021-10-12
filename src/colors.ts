@@ -12,10 +12,10 @@ function getEffects(effectList: string[]): string {
 interface OptionsProps {
     font?: string;
     background?: string;
-    effects?: [string];
+    effects?: string[];
 }
 
-export function color(text: string, options: OptionsProps): string {
+export function color(text: string, options: OptionsProps) {
     const preparedText: string = text.replace(/ё/g, 'е');
     let result: string = '';
     if (options) {
