@@ -10,7 +10,7 @@ function getEffects(effectList: string[]): string {
 }
 
 interface OptionsProps {
-    font?: string;
+    font?: boolean;
     background?: string;
     effects?: string[];
 }
